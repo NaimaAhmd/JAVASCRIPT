@@ -10,3 +10,11 @@
         return true
         console.log("maam")
 }
+
+{
+    for(let i=1; <= 10;i++){
+        for (let j=1;j<=i;j++){
+            document.write(i+);
+        }
+    }document.write("<br>")
+}
