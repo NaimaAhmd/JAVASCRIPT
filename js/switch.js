@@ -29,46 +29,25 @@
 //   // you are not able to do any course
 // }
 {
-let maths = "pass";
-let english = "fail";
-let chemistry = "fail";
-let physics = "pass";
-let kiswahili = "fail";
+  let maths = "pass";
+  let english = "fail";
+  let chemistry = "fail";
+  let physics = "pass";
+  let kiswahili = "fail";
 
-// Course requirements
- if (computerScienceReq) = (maths === "pass") && (english === "pass" || kiswahili === "pass");
-else journalismReq = maths === "pass" && english === "pass" && kiswahili === "pass";
- engineeringReq = maths === "pass" && (english === "pass" || kiswahili === "pass") && physics === "pass";
-const medicineReq = maths === "pass" && (english === "pass" || kiswahili === "pass") && chemistry === "pass";
-
-if (computerScienceReq || journalismReq || engineeringReq || medicineReq) {
-  console.log("You can choose a course of your choice!");
-} else {
-  console.log("You are not able to pursue any specific course.");
-}
+  if (maths == "pass" && english == "pass" && chemistry == "pass" && physics == "pass" && kiswahili == "pass"){
+    console.log("You qualify for all the courses")
+  }else if(maths == "pass" && (english == "pass" || kiswahili == "pass") && (physics == "pass" || chemistry == "pass")){
+    console.log("Computer Science")
+  }else if (maths=="pass" && ( english=="pass"&& kiswahili)){
+    console.log( "journlism")
+  }else if(maths=="pass"&& physics=="pass"&&  english=="pass"||kiswahili=="pass"){
+    console.log("Engineer")
+  }else if(maths=="pass"&&  chemistry=="pass"&&(english=="pass"||kiswahili=="pass")){
+    console.log("medicine")
+  }else{
+    console.log("you not able to do any course")
+  }
 
 }                                                                                                                                                    
-  { check_qualification(subjects)}
-   
-    
-   //  Define the criteria for each course
-   // compute_science_criteria = {"maths", "language", "physics", "chemistry"}
-   // journalism_criteria = {"maths", "english", "kiswahili", "humanities"}
-   // engineering_criteria = {"maths", "language", "humanities", "physics", "chemistry"}
-   // medicine_criteria = {"maths", "language", "chemistry", "humanities"}
-    
-  {"Check qualification for each course"}
-
-
-       if (computer_Science_criteria ) (maths && english  || kiswahili&& geography&&physics);
-        return journalism_criteria=(maths  && english || kiswahili );
-       return  engineering_criteria = maths && (english || kiswahili ) && (geoggraphy||history) ;
-        return medicine_criteria= maths && (english  || kiswahili) && chemistry( geography||history) ;
-        
-        if (computer_Science_criteria || journalism_criteria || engineering_criteria || medicine_criteria) {
-          console.log("You can choose a course of your choice!");
-        } else {
-          console.log("You are not able to pursue any specific course.");
-        }
-
- 
+  
